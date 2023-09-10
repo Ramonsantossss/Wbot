@@ -124,10 +124,9 @@ return tvShows;
 
 
 
-//INFORMAÇÕES DO ANIME
 async function veranime(name) {
   try {
-    const url = `https://animeshentai.biz/anime/${name}`;
+    const url = `https://animesonlinecc.to/anime/${name}`;
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
 
@@ -167,7 +166,8 @@ async function veranime(name) {
       });
     });
 
-    return animeInfo; // Retorna animeInfo como resposta
+    // Retornar o objeto animeInfo como JSON
+    return JSON.stringify(animeInfo, null, 2);
   } catch (error) {
     console.error('Erro ao buscar informações do anime:', error);
     throw error;
@@ -177,6 +177,8 @@ async function veranime(name) {
 
 
 
+
+//veranime()
 
 
 module.exports = {
