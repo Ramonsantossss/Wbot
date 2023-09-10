@@ -126,7 +126,7 @@ return tvShows;
 
 async function veranime(name) {
   try {
-    const url = `https://animesonlinecc.to/anime/${name}`;
+    const url = `https://animeshentai.biz/anime/${name}`;
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
 
