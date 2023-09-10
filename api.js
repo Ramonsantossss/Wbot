@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 // ASSISTA 
 async function assistir(epId) {
   try {
-    const url = `https://animesonlinecc.to/episodio/${epId}`;
+    const url = `https://animeshentai.biz/episodio/${epId}`;
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
 
@@ -47,7 +47,7 @@ return episodeInfo;
 // Função para buscar informações de animes recentes.
 async function fetchAnimesRecents() {
   try {
-    const url = 'https://animesonlinecc.to/episodio/';
+    const url = 'https://animeshentai.biz/episodio/';
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
     const episodes = [];
@@ -84,8 +84,8 @@ return episodes;
 // Pegar anime por gênero
 async function genero(nameGenero) {
   try {
-    // https://animesonlinecc.to/genero/romance/page/2/
-    const url = `https://animesonlinecc.to/genero/${nameGenero}`;
+    // https://animeshentai.biz/genero/romance/page/2/
+    const url = `https://animeshentai.biz/genero/${nameGenero}`;
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
 
@@ -127,7 +127,7 @@ return tvShows;
 //INFORMAÇÕES DO ANIME
 async function veranime(name) {
   try {
-    const url = `https://animesonlinecc.to/anime/${name}`;
+    const url = `https://animeshentai.biz/anime/${name}`;
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
 
