@@ -47,7 +47,7 @@ app.get('/genero/:nameGenero', async (req, res) => {
 
 
 // Rota da API que chama a função veranime
-app.get('/veranime', async (req, res) => {
+app.get('/veranime/:name', async (req, res) => {
   const { name } = req.params;
   try {
     // Chame a função veranime para obter informações de um anime específico
