@@ -2,9 +2,9 @@
   "name": "AniKit",
   "version": "1.1.0",
   "description": "Imagens de Animes",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node test.js"
   },
   "keywords": [
     "simple",
